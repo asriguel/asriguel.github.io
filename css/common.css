@@ -590,6 +590,10 @@ a:hover {
   .footer__copyrights {
     font-size: 12px;
   }
+
+  .sidebar__search input {
+    padding: 10px 25px 10px 6px;
+  }
 }
 
 @media screen and (min-width: 769px) {
@@ -597,7 +601,3 @@ a:hover {
     display: none;
   }
 }
-
-/* Extra Small Devices, Phones */
-
-/* Custom, iPhone Retina */
