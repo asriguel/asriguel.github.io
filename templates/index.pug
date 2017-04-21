@@ -1,0 +1,257 @@
+doctype html
+html(lang="ru")
+    head
+        title= pageTitle
+        meta(charset='UTF-8')
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        link(href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic", rel="stylesheet")
+        link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', rel='stylesheet')
+        link(href='../css/bundle.min.css', rel='stylesheet')
+        script(src='https://code.jquery.com/jquery-3.2.1.min.js')
+        script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+    body
+        .wrapper#wrapper
+            .sidebar
+                button(type="button").menu-toggle.mobile-only
+                    span.cross.
+                        X
+                .sidebar__wrapper
+                    ul.sidebar__nav
+                        li.sidebar__nav__item.sidebar__brand
+                            a(href="/")
+                                img(src="../img/logo.png").brand__image
+                        li.sidebar__nav__item.mobile-only
+                            a.sidebar__link.auth__link.
+                                Вход
+                        li.sidebar__nav__item.mobile-only
+                            a.sidebar__link.auth__link.
+                                Регистрация
+                        li.sidebar__nav__delimiter.mobile-only
+                        li.sidebar__nav__item(style="padding-top:14px")
+                            a.sidebar__link(href="#").sidebar__link_active.sidebar__link_main.
+                                Все мероприятия
+                        each item in ['Игра-квест', 'Соревнования', 'Кросс-кантри', 'Любительский марафон', 'Многодневка', 'Поисково-спасательные работы', 'Мультимарафон']
+                            li.sidebar__nav__item
+                                a.sidebar__link.sidebar__link_main(href="#")= item
+
+                        li.sidebar__nav__delimiter
+
+                        each item in ['Планируемые события', 'События и фотоотчеты', 'Туризм', 'Вело барахолка', 'Спецпроект', 'Спонсорство', 'Благотворительность', 'Архив событий']
+                            li.sidebar__nav__item
+                                a.sidebar__link(href="#")= item
+
+
+
+                    form.sidebar__search
+                        input(placeholder="Поиск")
+                        a.sidebar__search-button
+            .content-wrapper
+                header.header
+                    .head-line
+                        button(type="button")#menu-toggle.menu-toggle.mobile-only
+                            span.hamburger.
+
+                        .head-line__logo.mobile-only
+                            a(href="/")
+                                img(src="../img/logo.png")
+
+                        .head-line__title
+                            span.title.
+                                Портал о вело-мероприятиях Беларуси
+                        .head-line__auth.hidden-xs
+                            a.auth__link(href="#").
+                                Вход
+                            span.auth__delimiter.
+                                /
+                            a.auth__link(href="#").
+                                Регистрация
+                section.main-content
+                    .container-fluid
+                        .row
+                            .col-md-12
+                                .item.item_big
+                                    .item__header
+                                        h3.item__title
+                                            a.item__title__link(href="#").
+                                                Марафон «Налибоки '16»
+                                        a.item__descr(href="#").
+                                            Любительский марафон
+                                    .row
+                                        .col-md-8
+                                            .item__image-wrapper
+                                                img(src="../img/img1.jpg").item__image.img-responsive
+                                        .col-md-4
+                                            .item__content
+                                                p
+                                                    span.text-bold.
+                                                        Дата:&nbsp;
+                                                    span.
+                                                        28-29 мая 2016 г.
+                                                p
+                                                    span.text-bold.
+                                                        Место:&nbsp;
+                                                    span.
+                                                        РБ, Минская Гродненская области, Воложинский, Молодечненский, Сморгонский, Ивьевский, Столбцовский районы.
+                                                p
+                                                    span.text-bold.
+                                                        Ранг:&nbsp;
+                                                    span.
+                                                        Марафон проводится в рамках Кубка приключенческих гонок «Промвад Тур '16», Кубка марафонов "Поехали!" 2016.
+                                                p.
+                                                    Весна, теплое солнце, яркая зелень и сладкий запах цветущих садов – что еще нужно человеку для счастья? Ну конечно же дорога и новое путешествие, приключения и открытия на любимом марафоне «Налибоки`16».
+
+                                                a(href="#").link.item__link.
+                                                    Подробнее
+
+                                                .shares
+                                                    a.shares__link.shares__link_vk(href="#")
+                                                        span.icon.icon_vk
+                                                    a.shares__link.shares__link_fb(href="#")
+                                                        span.icon.icon_fb
+                                                        span.count.
+                                                            890
+                                                    a.shares__link.shares__link_tw(href="#")
+                                                        span.icon.icon_tw
+                                                        span.count.
+                                                            189
+                                                    a.shares__link.shares__link_ok(href="#")
+                                                        span.icon.icon_ok
+                                                    a.shares__link.shares__link_mail-ru(href="#")
+                                                        span.icon.icon_mail-ru
+                                                        span.count.
+                                                            1 435
+                                                    a.shares__link.shares__link_google(href="#")
+                                                        span.icon.icon_google
+                                                        span.count.
+                                                            181
+
+                        .items-list
+                            .items-list__delimiter
+                            .row
+                                .col-md-4.col-sm-6
+                                    .item.item_small
+                                        .item__image-wrapper
+                                            img(src="../img/img2.jpg").item__image.img-responsive
+                                        .item__content-wrapper
+                                            h3.item__title
+                                                a.item__title__link(href="#").
+                                                    Марафон «Налибоки '16»
+                                            a.item__descr(href="#").
+                                                Любительский марафон
+                                            .item__text
+                                                p.
+                                                    Весна, теплое солнце, яркая зелень и сладкий запах цветущих садов – что еще нужно человеку для счастья? Ну конечно же дорога и новое путешествие, приключения и открытия на любимом марафоне «Налибоки`16».
+
+                                        a(href="#").link.item__link.
+                                                Подробнее
+                                .col-md-4.col-sm-6
+                                    .item.item_small
+                                        .item__image-wrapper
+                                            img(src="../img/img3.jpg").item__image.img-responsive
+                                        .item__content-wrapper
+                                            h3.item__title
+                                                a.item__title__link(href="#").
+                                                    Страховский веломарафон
+                                            a.item__descr(href="#").
+                                                Кросс-кантри
+                                            .item__text
+                                                p.
+                                                    Вас ждет увлекательный трек, хороший перепад высот, базовый лагерь в живописнейшем месте на берегу Березины, а также накал спортивной борьбы, проверка своих сил.
+                                        a(href="#").link.item__link.
+                                            Подробнее
+
+                                .col-md-4.col-sm-6
+                                    .item.item_small
+                                        .item__image-wrapper
+                                            img(src="../img/img4.jpg").item__image.img-responsive
+                                        .item__content-wrapper
+                                            h3.item__title
+                                                a.item__title__link(href="#").
+                                                    Кубок марафонов
+                                            a.item__descr(href="#").
+                                                Любительский марафон
+                                            .item__text
+                                                p.
+                                                    В качестве первых в сезоне соревнований, контрольной тренировки, повода слезть с дивана, в конце концов, приглашаем на любительский марафон «Люты», который пройдет 20 февраля под Лепелем.
+
+                                        a(href="#").link.item__link.
+                                            Подробнее
+
+                                .clearfix.hidden-sm.hidden-xs
+                                .col-md-4.col-sm-6
+                                    .item.item_small
+                                        .item__image-wrapper
+                                            img(src="../img/img5.jpg").item__image.img-responsive
+                                        .item__content-wrapper
+                                            h3.item__title
+                                                a.item__title__link(href="#").
+                                                    Марафон «Медвежино»
+                                            a.item__descr(href="#").
+                                                Кросс-кантри
+                                            .item__text
+                                                p.
+                                                    Отличный повод собраться вместе пообщаться, похвастаться новыми приобретениями, обсудить новинки велоиндустрии, принять участие в гонке, или посмотреть со стороны и поболеть за участников.
+
+                                        a(href="#").link.item__link.
+                                            Подробнее
+                                .col-md-4.col-sm-6
+                                    .item.item_small
+                                        .item__image-wrapper
+                                            img(src="../img/img6.jpg").item__image.img-responsive
+                                        .item__content-wrapper
+                                            h3.item__title
+                                                a.item__title__link(href="#").
+                                                    «Время героев»
+                                            a.item__descr(href="#").
+                                                Поисково-спасательные работы
+                                            .item__text
+                                                p.
+                                                    Всем ценителям выживания в экстремальных условиях, почитателям традиционной медицины, легкоходам, любителям ориентирования на местности и просто, всем, кто ведёт активный образ жизни.
+                                        a(href="#").link.item__link.
+                                            Подробнее
+
+                                .col-md-4.col-sm-6
+                                    .item.item_small
+                                        .item__image-wrapper
+                                            img(src="../img/img7.jpg").item__image.img-responsive
+                                        .item__content-wrapper
+                                            h3.item__title
+                                                a.item__title__link(href="#").
+                                                    Летняя коллекция
+                                            a.item__descr(href="#").
+                                                Игра-квест
+                                            .item__text
+                                                p.
+                                                    В день игры пройти пешеходный или велосипедный маршрут по таким местам и увидеть их своими глазами смогут все желающие.
+
+                                        a(href="#").link.item__link.
+                                            Подробнее
+
+                footer.footer
+                    .footer__menu
+                        a.footer__link(href="#").
+                            Мобильная версия
+                        a.footer__link(href="#").
+                            Рассылка новостей
+                        a.footer__link(href="#").
+                            Правила сайта
+                        a.footer__link(href="#").
+                            Помощь клуба
+                        a.footer__link(href="#").
+                            Карты
+                        a.footer__link(href="#").
+                            Регионы
+                    .footer__copyrights.
+                        © 1999–2016 «Поехали!»
+
+
+
+        script(src="../assets/afterresize/afterresize.min.js")
+        script(src="../js/common.js")
+
+
+
+
+
+
+

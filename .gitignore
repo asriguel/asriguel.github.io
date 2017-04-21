@@ -3,3 +3,4 @@
 *.xls
 /.idea/
 .idea/
+node_modules/

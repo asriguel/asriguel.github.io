@@ -1,10 +1,195 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="ru">
+  <head>
+    <title></title>
     <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-TEST
-</body>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bundle.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper" id="wrapper">
+      <div class="sidebar">
+        <button class="menu-toggle mobile-only" type="button"><span class="cross">X</span></button>
+        <div class="sidebar__wrapper">
+          <ul class="sidebar__nav">
+            <li class="sidebar__nav__item sidebar__brand"><a href="/"><img class="brand__image" src="../img/logo.png"></a></li>
+            <li class="sidebar__nav__item mobile-only"><a class="sidebar__link auth__link">Вход</a></li>
+            <li class="sidebar__nav__item mobile-only"><a class="sidebar__link auth__link">Регистрация</a></li>
+            <li class="sidebar__nav__delimiter mobile-only"></li>
+            <li class="sidebar__nav__item" style="padding-top:14px;"><a class="sidebar__link sidebar__link_active sidebar__link_main" href="#">Все мероприятия</a></li>
+            <li class="sidebar__nav__item"><a class="sidebar__link sidebar__link_main" href="#">Игра-квест</a></li>
+            <li class="sidebar__nav__item"><a class="sidebar__link sidebar__link_main" href="#">Соревнования</a></li>
+            <li class="sidebar__nav__item"><a class="sidebar__link sidebar__link_main" href="#">Кросс-кантри</a></li>
+            <li class="sidebar__nav__item"><a class="sidebar__link sidebar__link_main" href="#">Любительский марафон</a></li>
+            <li class="sidebar__nav__item"><a class="sidebar__link sidebar__link_main" href="#">Многодневка</a></li>
+            <li class="sidebar__nav__item"><a class="sidebar__link sidebar__link_main" href="#">Поисково-спасательные работы</a></li>
+            <li class="sidebar__nav__item"><a class="sidebar__link sidebar__link_main" href="#">Мультимарафон</a></li>
+            <li class="sidebar__nav__delimiter"></li>
+            <li class="sidebar__nav__item"><a class="sidebar__link" href="#">Планируемые события</a></li>
+            <li class="sidebar__nav__item"><a class="sidebar__link" href="#">События и фотоотчеты</a></li>
+            <li class="sidebar__nav__item"><a class="sidebar__link" href="#">Туризм</a></li>
+            <li class="sidebar__nav__item"><a class="sidebar__link" href="#">Вело барахолка</a></li>
+            <li class="sidebar__nav__item"><a class="sidebar__link" href="#">Спецпроект</a></li>
+            <li class="sidebar__nav__item"><a class="sidebar__link" href="#">Спонсорство</a></li>
+            <li class="sidebar__nav__item"><a class="sidebar__link" href="#">Благотворительность</a></li>
+            <li class="sidebar__nav__item"><a class="sidebar__link" href="#">Архив событий</a></li>
+          </ul>
+          <form class="sidebar__search">
+            <input placeholder="Поиск"><a class="sidebar__search-button"></a>
+          </form>
+        </div>
+      </div>
+      <div class="content-wrapper">
+        <header class="header">
+          <div class="head-line">
+            <button class="menu-toggle mobile-only" type="button" id="menu-toggle"><span class="hamburger"></span></button>
+            <div class="head-line__logo mobile-only"><a href="/"><img src="../img/logo.png"></a></div>
+            <div class="head-line__title"><span class="title">Портал о вело-мероприятиях Беларуси</span></div>
+            <div class="head-line__auth hidden-xs"><a class="auth__link" href="#">Вход</a><span class="auth__delimiter">/</span><a class="auth__link" href="#">Регистрация</a></div>
+          </div>
+        </header>
+        <section class="main-content">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="item item_big">
+                  <div class="item__header">
+                    <h3 class="item__title"><a class="item__title__link" href="#">Марафон «Налибоки '16»</a></h3><a class="item__descr" href="#">Любительский марафон</a>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-8">
+                      <div class="item__image-wrapper"><img class="item__image img-responsive" src="../img/img1.jpg"></div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="item__content">
+                        <p><span class="text-bold">Дата:&nbsp;</span><span>28-29 мая 2016 г.</span></p>
+                        <p><span class="text-bold">Место:&nbsp;</span><span>РБ, Минская Гродненская области, Воложинский, Молодечненский, Сморгонский, Ивьевский, Столбцовский районы.</span></p>
+                        <p><span class="text-bold">Ранг:&nbsp;</span><span>Марафон проводится в рамках Кубка приключенческих гонок «Промвад Тур '16», Кубка марафонов "Поехали!" 2016.</span></p>
+                        <p>
+                          Весна, теплое солнце, яркая зелень и сладкий запах цветущих садов – что еще нужно человеку для счастья? Ну конечно же дорога и новое путешествие, приключения и открытия на любимом марафоне «Налибоки`16».
+                          
+                        </p><a class="link item__link" href="#">
+                          Подробнее
+                          </a>
+                        <div class="shares"><a class="shares__link shares__link_vk" href="#"><span class="icon icon_vk"></span></a><a class="shares__link shares__link_fb" href="#"><span class="icon icon_fb"></span><span class="count">890</span></a><a class="shares__link shares__link_tw" href="#"><span class="icon icon_tw"></span><span class="count">189</span></a><a class="shares__link shares__link_ok" href="#"><span class="icon icon_ok"></span></a><a class="shares__link shares__link_mail-ru" href="#"><span class="icon icon_mail-ru"></span><span class="count">1 435</span></a><a class="shares__link shares__link_google" href="#"><span class="icon icon_google"></span><span class="count">
+                              181
+                              </span></a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="items-list">
+              <div class="items-list__delimiter"></div>
+              <div class="row">
+                <div class="col-md-4 col-sm-6">
+                  <div class="item item_small">
+                    <div class="item__image-wrapper"><img class="item__image img-responsive" src="../img/img2.jpg"></div>
+                    <div class="item__content-wrapper">
+                      <h3 class="item__title"><a class="item__title__link" href="#">Марафон «Налибоки '16»</a></h3><a class="item__descr" href="#">Любительский марафон</a>
+                      <div class="item__text">
+                        <p>
+                          Весна, теплое солнце, яркая зелень и сладкий запах цветущих садов – что еще нужно человеку для счастья? Ну конечно же дорога и новое путешествие, приключения и открытия на любимом марафоне «Налибоки`16».
+                          
+                        </p>
+                      </div>
+                    </div><a class="link item__link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <div class="item item_small">
+                    <div class="item__image-wrapper"><img class="item__image img-responsive" src="../img/img3.jpg"></div>
+                    <div class="item__content-wrapper">
+                      <h3 class="item__title"><a class="item__title__link" href="#">Страховский веломарафон</a></h3><a class="item__descr" href="#">Кросс-кантри</a>
+                      <div class="item__text">
+                        <p>Вас ждет увлекательный трек, хороший перепад высот, базовый лагерь в живописнейшем месте на берегу Березины, а также накал спортивной борьбы, проверка своих сил.</p>
+                      </div>
+                    </div><a class="link item__link" href="#">
+                      Подробнее
+                      </a>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <div class="item item_small">
+                    <div class="item__image-wrapper"><img class="item__image img-responsive" src="../img/img4.jpg"></div>
+                    <div class="item__content-wrapper">
+                      <h3 class="item__title"><a class="item__title__link" href="#">Кубок марафонов</a></h3><a class="item__descr" href="#">Любительский марафон</a>
+                      <div class="item__text">
+                        <p>
+                          В качестве первых в сезоне соревнований, контрольной тренировки, повода слезть с дивана, в конце концов, приглашаем на любительский марафон «Люты», который пройдет 20 февраля под Лепелем.
+                          
+                        </p>
+                      </div>
+                    </div><a class="link item__link" href="#">
+                      Подробнее
+                      </a>
+                  </div>
+                </div>
+                <div class="clearfix hidden-sm hidden-xs"></div>
+                <div class="col-md-4 col-sm-6">
+                  <div class="item item_small">
+                    <div class="item__image-wrapper"><img class="item__image img-responsive" src="../img/img5.jpg"></div>
+                    <div class="item__content-wrapper">
+                      <h3 class="item__title"><a class="item__title__link" href="#">Марафон «Медвежино»</a></h3><a class="item__descr" href="#">Кросс-кантри</a>
+                      <div class="item__text">
+                        <p>
+                          Отличный повод собраться вместе пообщаться, похвастаться новыми приобретениями, обсудить новинки велоиндустрии, принять участие в гонке, или посмотреть со стороны и поболеть за участников.
+                          
+                        </p>
+                      </div>
+                    </div><a class="link item__link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <div class="item item_small">
+                    <div class="item__image-wrapper"><img class="item__image img-responsive" src="../img/img6.jpg"></div>
+                    <div class="item__content-wrapper">
+                      <h3 class="item__title"><a class="item__title__link" href="#">«Время героев»</a></h3><a class="item__descr" href="#">Поисково-спасательные работы</a>
+                      <div class="item__text">
+                        <p>Всем ценителям выживания в экстремальных условиях, почитателям традиционной медицины, легкоходам, любителям ориентирования на местности и просто, всем, кто ведёт активный образ жизни.</p>
+                      </div>
+                    </div><a class="link item__link" href="#">
+                      Подробнее
+                      </a>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <div class="item item_small">
+                    <div class="item__image-wrapper"><img class="item__image img-responsive" src="../img/img7.jpg"></div>
+                    <div class="item__content-wrapper">
+                      <h3 class="item__title"><a class="item__title__link" href="#">Летняя коллекция</a></h3><a class="item__descr" href="#">Игра-квест</a>
+                      <div class="item__text">
+                        <p>
+                          В день игры пройти пешеходный или велосипедный маршрут по таким местам и увидеть их своими глазами смогут все желающие.
+                          
+                        </p>
+                      </div>
+                    </div><a class="link item__link" href="#">
+                      Подробнее
+                      </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer class="footer">
+          <div class="footer__menu"><a class="footer__link" href="#">Мобильная версия</a><a class="footer__link" href="#">Рассылка новостей</a><a class="footer__link" href="#">Правила сайта</a><a class="footer__link" href="#">Помощь клуба</a><a class="footer__link" href="#">Карты</a><a class="footer__link" href="#">Регионы</a></div>
+          <div class="footer__copyrights">
+            © 1999–2016 «Поехали!»
+            
+            
+            
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="../assets/afterresize/afterresize.min.js"></script>
+    <script src="../js/common.js"></script>
+  </body>
 </html>
