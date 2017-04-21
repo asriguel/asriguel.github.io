@@ -229,7 +229,7 @@ a:hover {
   position: absolute;
   height: 16px;
   left: 3px;
-  top: 3px;
+  top: 2px;
 }
 
 .shares__link .icon_vk {
@@ -334,6 +334,8 @@ a:hover {
 
 .item__descr {
   color: #959595;
+  margin-bottom: 20px;
+  display: inline-block;
 }
 
 .item__content {
