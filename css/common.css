@@ -445,6 +445,18 @@ a:hover {
     font-size: 26px;
   }
 
+  .item_big .item__content {
+    margin-top: 20px;
+  }
+
+  .item_big .item__content p {
+    margin-bottom: 10px;
+  }
+
+  .item__descr {
+    margin-bottom: 0;
+  }
+
   .sidebar .menu-toggle {
     width: 100%;
     text-align: right;
